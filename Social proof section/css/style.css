@@ -1,0 +1,209 @@
+/*------------------------------------*\
+  #BASE-STYLES
+\*------------------------------------*/
+
+:root {
+  --color-primary-dark-magenta: hsl(300, 43%, 22%);
+  --color-primary-soft-pink: hsl(333, 80%, 67%);
+
+  --color-neutral-grayish-magenta: hsl(303, 10%, 53%);
+  --color-neutral-light-grayish-magenta: hsl(300, 24%, 96%);
+  --color-neutral-white: hsl(0, 0%, 100%);
+}
+
+html {
+  min-height: 100%;
+  box-sizing: border-box;
+  font-size: 62.5%; /* equivalent to 10px*/
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100%;
+  padding: 8rem 0 10rem;
+  background-image: url("../images/bg-pattern-top-mobile.svg"),
+    url("../images/bg-pattern-bottom-mobile.svg");
+  background-size: 60%, 100%;
+  background-repeat: no-repeat;
+  background-position: left top, right bottom;
+  font-family: "Spartan", sans-serif;
+  font-size: 1.3rem;
+  color: var(--color-primary-dark-magenta);
+  text-align: center;
+}
+
+.container {
+  max-width: 1110px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/*------------------------------------*\
+  #HEADER
+\*------------------------------------*/
+
+h1 {
+  margin-bottom: 1.8rem;
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.content p {
+  margin-bottom: 4rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--color-neutral-grayish-magenta);
+  line-height: 1.67;
+}
+
+/*------------------------------------*\
+  #RATING-CARDS
+\*------------------------------------*/
+
+.ratings li {
+  padding: 16px;
+  border-radius: 8px;
+  background-color: var(--color-neutral-light-grayish-magenta);
+}
+
+.ratings > * + * {
+  /* applies margin to 2nd and 3rd list element only */
+  margin-top: 1.6rem;
+}
+
+.ratings img {
+  /* stars */
+  margin: 0 2px;
+}
+
+.ratings span {
+  display: inline-block;
+  margin-top: 1.6rem;
+  font-weight: 700;
+}
+
+.wrapper {
+  margin-bottom: 5rem;
+}
+
+/*------------------------------------*\
+  #REVIEW-CARDS
+\*------------------------------------*/
+
+.reviews * + * {
+  margin-top: 1.6rem;
+}
+
+.reviews li {
+  padding: 4rem 3.2rem 3.2rem;
+  border-radius: 8px;
+  background-color: var(--color-primary-dark-magenta);
+  color: var(--color-neutral-white);
+  text-align: left;
+}
+
+.reviewer-meta {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.6rem;
+}
+
+.reviews p {
+  font-weight: 500;
+  line-height: 1.6923;
+}
+
+.reviewer-meta img {
+  height: 4rem;
+  width: 4rem;
+  margin-right: 2.3rem;
+  border-radius: 50%;
+}
+
+.reviewer-meta span {
+  color: var(--color-primary-soft-pink);
+}
+
+@media (min-width: 650px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media (min-width: 900px) {
+  body {
+    padding: 12rem 0;
+    background-image: url(../images/bg-pattern-top-desktop.svg),
+      url(../images/bg-pattern-bottom-desktop.svg);
+    background-size: 40%, 75%;
+    text-align: left;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .content {
+    width: 40%;
+  }
+
+  .content p {
+    margin: 0;
+  }
+
+  .ratings li {
+    display: flex;
+    align-items: center;
+    padding: 1.6rem 6rem 1.6rem 3.2rem;
+  }
+
+  .ratings li:nth-child(1) {
+    transform: translateX(-100px);
+  }
+
+  .ratings li:nth-child(2) {
+    transform: translateX(-50px);
+  }
+  .ratings span {
+    margin: 0 0 0 3.2rem;
+  }
+
+  .reviews {
+    display: flex;
+    margin-top: 8.8rem;
+  }
+
+  .reviews > * + * {
+    margin-top: 0;
+    margin-left: 3rem;
+  }
+
+  .reviews li:nth-child(1) {
+    transform: translateY(-16px);
+  }
+
+  .reviews li:nth-child(3) {
+    transform: translateY(16px);
+  }
+}
+
+@media (min-width: 1050px) {
+  h1 {
+    font-size: 4.8rem;
+  }
+}

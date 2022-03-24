@@ -1,0 +1,16 @@
+:root {
+  --color-primary-200: hsl(225, 100%, 92%);
+  --color-primary-300: hsl(245, 83%, 68%);
+  --color-primary-400: hsl(245, 75%, 52%);
+
+  --color-neutral-100: hsl(0, 0%, 100%);
+  --color-neutral-200: hsl(225, 100%, 98%);
+  --color-neutral-400: hsl(224, 23%, 55%);
+  --color-neutral-800: hsl(223, 46%, 23%);
+  --color-neutral-900: hsl(223, 47%, 23%);
+}
+
+html {
+  min-height: 100%;
+  font-size: 62.5%;
+}

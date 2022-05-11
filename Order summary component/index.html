@@ -21,27 +21,31 @@
   </head>
 
   <body>
-    <main class="card">
-      <img src="images/illustration-hero.svg" alt="" class="card-img" />
-
-      <div class="card-content">
-        <h1>Order Summary</h1>
+    <div class="[ card ] [ bg-neutral-100 text-align-center br-2 ]">
+      <img src="images/illustration-hero.svg" alt="" class="card__image" />
+      <div class="[ card__content ] [ grid-flow ] [ padding-48 ]">
+        <h2>Order Summary</h2>
         <p>
           You can now listen to millions of songs, audiobooks, and podcasts on
           any device anywhere you like!
         </p>
-        <div class="pricing-plan">
-          <img src="images/icon-music.svg" alt="" />
-          <h2>Annual Plan</h2>
-          <p>$59.99/year</p>
-          <button>Change</button>
+        <div class="[ flex-row ] [ bg-neutral-200 text-align-left br-1 padding-24 ]">
+          <div>
+            <img src="images/icon-music.svg" alt="" />
+          </div>
+          <div>
+            <p class="text-neutral-800 fw-extra-bold">Annual Plan</p>
+            <p>$59.99/year</p>
+          </div>
+          <button class="link push-right">Change</button>
         </div>
-        <!-- end pricing-plan -->
+        <!-- end -->
 
-        <button>Proceed to Payment</button>
-        <button>Cancel Order</button>
+        <button class="button" data-type="primary">Proceed to Payment</button>
+        <button class="button" data-type="naked">Cancel Order</button>
       </div>
-      <!-- end card-content -->
-    </main>
+      <!-- end card__content -->
+    </div>
+    <!-- end card-->
   </body>
 </html>

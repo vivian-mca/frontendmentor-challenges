@@ -25,6 +25,12 @@ ol[role="list"] {
   list-style: none;
 }
 
+/* Custom setting */
+html {
+  min-height: 100%;
+  font-size: 62.5%;
+}
+
 /* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;

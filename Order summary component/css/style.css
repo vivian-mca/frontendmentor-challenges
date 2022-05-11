@@ -1,16 +1,179 @@
-:root {
-  --color-primary-200: hsl(225, 100%, 92%);
-  --color-primary-300: hsl(245, 83%, 68%);
-  --color-primary-400: hsl(245, 75%, 52%);
+/*------------------------------------*\
+  GLOBAL-STYLES
+\*------------------------------------*/
 
+:root {
   --color-neutral-100: hsl(0, 0%, 100%);
   --color-neutral-200: hsl(225, 100%, 98%);
   --color-neutral-400: hsl(224, 23%, 55%);
   --color-neutral-800: hsl(223, 46%, 23%);
   --color-neutral-900: hsl(223, 47%, 23%);
+
+  --color-primary-200: hsl(225, 100%, 92%);
+  --color-primary-300: hsl(245, 83%, 68%);
+  --color-primary-400: hsl(245, 75%, 52%);
+
+  --fs-700: 2.8rem;
+  --fs-400: 1.6rem;
+  --fs-300: 1.5rem;
+  --fs-200: 1.4rem;
 }
 
-html {
-  min-height: 100%;
-  font-size: 62.5%;
+body {
+  background: var(--color-primary-200);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: var(--fs-400);
+  font-weight: 500;
+  color: var(--color-neutral-400);
+  line-height: 1.625;
+
+  /* for demo only */
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: var(--fs-700);
+  font-weight: 900;
+  color: var(--color-neutral-800);
+}
+
+/*------------------------------------*\
+  COMPOSITION
+\*------------------------------------*/
+
+.grid-flow {
+  display: grid;
+  gap: var(--gap, 1.6rem);
+}
+
+.flex-row {
+  display: flex;
+  gap: var(--gap, 1.6rem);
+}
+
+/*------------------------------------*\
+  UTILITY
+\*------------------------------------*/
+
+.padding-24 {
+  padding: 2.4rem;
+}
+
+.padding-48 {
+  padding: 4.8rem;
+}
+
+.text-neutral-800 {
+  color: var(--color-neutral-800);
+}
+
+.text-neutral-400 {
+  color: var(--color-neutral-400);
+}
+
+.bg-neutral-100 {
+  background-color: var(--color-neutral-100);
+}
+
+.bg-neutral-200 {
+  background-color: var(--color-neutral-200);
+}
+
+.text-align-left {
+  text-align: start;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-right {
+  text-align: end;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.fw-extra-bold {
+  font-weight: 900;
+}
+
+.br-1 {
+  border-radius: 1.1rem;
+}
+
+.br-2 {
+  border-radius: 2rem;
+}
+
+.push-right {
+  margin-left: auto;
+}
+
+a,
+.link {
+  background: transparent;
+  border: 0;
+  font-weight: 700;
+  color: var(--color-primary-400);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a:hover,
+a:focus,
+.link:hover,
+.link:focus {
+  color: var(--color-primary-300);
+  text-decoration: none;
+}
+
+/*------------------------------------*\
+  BLOCK
+\*------------------------------------*/
+
+.button {
+  padding: 1.5rem 10.2rem;
+  background: transparent;
+  font-size: var(--fs-300);
+  font-weight: 700;
+  border: 0;
+  border-radius: 1.1rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button[data-type="primary"] {
+  color: var(--color-neutral-100);
+  background: var(--color-primary-400);
+}
+
+.button[data-type="primary"]:hover,
+.button[data-type="primary"]:focus {
+  background: var(--color-primary-300);
+}
+
+.button[data-type="naked"] {
+  padding: 0;
+  color: var(--color-neutral-400);
+}
+
+.button[data-type="naked"]:hover,
+.button[data-type="naked"]:focus {
+  color: var(--color-neutral-900);
+}
+
+.card {
+  overflow: hidden;
+  /* for demo only */
+  max-width: 450px;
 }

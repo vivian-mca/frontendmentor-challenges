@@ -76,11 +76,11 @@ This was a great beginner practice for basic HTML and CSS. I implemented CSS CUB
 }
 ```
 
+I also implemented CSS logical properties for this project. Instead of using `margin-top`, I used `margin-block-start`.
+
 ### Continued development
 
-Overall, I would like to improve on building apps from design files faster.
-
-I would also like to incorporate Sass in my future projects.
+Overall, I would like to improve on building apps from design files faster. I would also like to incorporate Sass in my future projects.
 
 ### Useful resources
 
@@ -90,7 +90,6 @@ I would also like to incorporate Sass in my future projects.
 - [Figma](https://figma.com/) - Really helpful for extracting information about measurements
 - [Perfect Pixel](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi) - Awesome Chrome extension that helps you to match the pixels of the provided design.
 - [Responsively App](https://responsively.app/) - This DevTool helps in responsive web development. It allows you to see mirrored user-interactions across all devices.
-- 
 
 ## Author
 

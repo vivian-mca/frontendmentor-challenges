@@ -1,0 +1,109 @@
+/*------------------------------------*\
+  #GLOBAL-STYLES
+\*------------------------------------*/
+
+:root {
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-300: hsl(211, 45%, 89%);
+  --clr-neutral-400: hsl(219, 15%, 55%);
+  --clr-neutral-500: hsl(217, 44%, 22%);
+
+  --ff: "Outfit", sans-serif;
+  --fs-400: 1.5rem;
+  --fs-500: 2.2rem;
+}
+
+html {
+  min-height: 100%;
+  box-sizing: border-box;
+  font-size: 62.5%; /* equivalent to 10px*/
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  background: var(--clr-neutral-300);
+  color: var(--clr-neutral-400);
+  font-family: var(--ff);
+  font-size: var(--fs-400);
+  font-weight: 400;
+  line-height: 1.26;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--clr-neutral-500);
+}
+
+p {
+  letter-spacing: 0.19px;
+}
+
+/*------------------------------------*\
+  COMPOSITION
+\*------------------------------------*/
+
+.flow > * + * {
+  margin-block-start: var(--space, 1.6rem);
+}
+
+.flow-exception {
+  --space: 2.4rem;
+}
+
+/*------------------------------------*\
+  UTILITY
+\*------------------------------------*/
+
+.bg-neutral-100 {
+  background: var(--clr-neutral-100);
+}
+
+.box-shadow {
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.0477);
+}
+
+.br-20 {
+  border-radius: 2rem;
+}
+
+.br-10 {
+  border-radius: 1rem;
+}
+
+.qr--wh {
+  width: 288px;
+  height: 288px;
+}
+
+.padding-16 {
+  padding: 1.6rem;
+}
+
+.padding-lr-16 {
+  padding-inline: 1.6rem;
+}
+
+.margin-btm-24 {
+  margin-block-end: 2.4rem;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+/*------------------------------------*\
+  BLOCK
+\*------------------------------------*/
+
+.card {
+  max-width: 32rem;
+}

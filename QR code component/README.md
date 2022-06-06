@@ -80,9 +80,7 @@ I also implemented CSS logical properties for this project. Instead of using `ma
 
 ### Continued development
 
-Overall, I would like to improve on building apps from design files faster.
-
-I would also like to incorporate Sass in my future projects.
+Overall, I would like to improve on building apps from design files faster. I would also like to incorporate Sass in my future projects.
 
 ### Useful resources
 

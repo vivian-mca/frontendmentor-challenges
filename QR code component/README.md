@@ -10,7 +10,7 @@
       Live
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/solutions/qr-code-component-using-cube-css-KGJLAeu1LL">
+    <a href="https://www.frontendmentor.io/solutions/qr-code-component-using-cube-css-WryfwrkGED">
       Solution
     </a>
    <span> | </span>

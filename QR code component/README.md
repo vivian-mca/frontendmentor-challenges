@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://vivian-mca.github.io/frontendmentor-challenges/QR%20code%20component/">
+    <a href="https://vivian-mca.github.io/frontendmentor-projects/QR%20code%20component/">
       Live
     </a>
     <span> | </span>

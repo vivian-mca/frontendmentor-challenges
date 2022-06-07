@@ -47,9 +47,14 @@ Users should be able to:
 
 ### Screenshot
 
-<p align="center"><em>Mobile design</em></p>
 <p align="center">
-  <img src="./design/mobile-design.png" alt="mobile design" width="300" align="center"/>
+  <img src="./design/solution-v-design.png" alt="mobile design"/>
+</p>
+
+<p align="center"><em>Mobile design</em></p>
+
+<p align="center">
+  <img src="./design/mobile-design.png" alt="mobile design" width="300"/>
 </p>
 
 ## My process
@@ -88,6 +93,7 @@ Overall, I would like to improve on building apps from design files faster. I wo
 - [CUBE CSS documentation](https://cube.fyi/) - From the docs: "CUBE CSS is a CSS methodology that’s orientated towards simplicity, pragmatism and consistency. It’s designed to work with the medium that you’re working in—often the browser—rather than against it."
 - [Every Layout](https://every-layout.dev/) - Extremely helpful resource for simplifying CSS layouts.
 - [Figma](https://figma.com/) - Really helpful for extracting information about measurements
+- [Modern CSS Reset](https://piccalil.li/blog/a-modern-css-reset/)
 - [Perfect Pixel](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi) - Awesome Chrome extension that helps you to match the pixels of the provided design.
 - [Responsively App](https://responsively.app/) - This DevTool helps in responsive web development. It allows you to see mirrored user-interactions across all devices.
 

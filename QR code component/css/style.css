@@ -8,14 +8,22 @@
   --clr-neutral-400: hsl(220, 15%, 55%);
   --clr-neutral-500: hsl(218, 44%, 22%);
 
+  --10px: calc(10rem / 16);
+  --15px: calc(15rem / 16);
+  --16px: 1rem;
+  --20px: calc(20rem / 16);
+  --22px: calc(22rem / 16);
+  --24px: calc(24rem / 16);
+  --288px: calc(288rem / 16);
+  --320px: calc(320rem / 16);
+
   --ff: "Outfit", sans-serif;
-  --fs-400: 1.5rem;
-  --fs-500: 2.2rem;
+  --fs-400: var(--15px);
+  --fs-500: var(--22px);
 }
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; /* equivalent to 10px*/
 }
 
 *,
@@ -33,17 +41,17 @@ body {
   font-family: var(--ff);
   font-size: var(--fs-400);
   font-weight: 400;
-  line-height: 1.27;
+  line-height: 1.26;
 }
 
 h1 {
-  font-size: 2.2rem;
+  font-size: var(--fs-500);
   font-weight: 700;
   color: var(--clr-neutral-500);
 }
 
 p {
-  letter-spacing: 0.019rem;
+  letter-spacing: 0.0127em; /* 0.19px */
 }
 
 /*------------------------------------*\
@@ -51,11 +59,11 @@ p {
 \*------------------------------------*/
 
 .flow > * + * {
-  margin-block-start: var(--space, 1.6rem);
+  margin-block-start: var(--space, var(--16px));
 }
 
 .flow-exception {
-  --space: 2.4rem;
+  --space: var(--24px);
 }
 
 /*------------------------------------*\
@@ -71,28 +79,28 @@ p {
 }
 
 .br-20 {
-  border-radius: 2rem;
+  border-radius: var(--20px);
 }
 
 .br-10 {
-  border-radius: 1rem;
+  border-radius: var(--10px);
 }
 
 .qr--wh {
-  width: 288px;
-  height: 288px;
+  width: var(--288px);
+  height: var(--288px);
 }
 
 .padding-16 {
-  padding: 1.6rem;
+  padding: var(--16px);
 }
 
 .padding-lr-16 {
-  padding-inline: 1.6rem;
+  padding-inline: var(--16px);
 }
 
 .margin-btm-24 {
-  margin-block-end: 2.4rem;
+  margin-block-end: var(--24px);
 }
 
 .text-align-center {
@@ -104,5 +112,5 @@ p {
 \*------------------------------------*/
 
 .card {
-  max-width: 32rem;
+  max-width: var(--320px);
 }

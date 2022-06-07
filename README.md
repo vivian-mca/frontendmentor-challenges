@@ -39,7 +39,7 @@ To view the project's source code, live demo, and/or direct link to its challeng
   - a single block of an order summary card made with HTML and CSS
 - QR code component - [Repo](https://github.com/vivian-mca/frontendmentor-projects/tree/gh-pages/QR%20code%20component) | [Live](https://vivian-mca.github.io/frontendmentor-challenges/QR%20code%20component/) | [Challenge](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H)
   - a single block of a QR code card made with HTML and CSS
-- Social proof section - [Repo](https://github.com/vivian-mca/frontendmentor-projects/tree/gh-pages/Social%20proof%20section) | [Live](https://vivian-mca.github.io/frontendmentor-challenges/QR%20code%20component/) | [Challenge](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H)
+- Social proof section - [Repo](https://github.com/vivian-mca/frontendmentor-projects/tree/gh-pages/Social%20proof%20section) | [Live](https://vivian-mca.github.io/frontendmentor-challenges/QR%20code%20component/) | [Challenge](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA)
   - a single page social proof section made with HTML and CSS
 
 ## Status

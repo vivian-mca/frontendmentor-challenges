@@ -41,13 +41,14 @@ body {
   font-family: var(--ff);
   font-size: var(--fs-400);
   font-weight: 400;
-  line-height: 1.26;
+  line-height: 1.267;
 }
 
 h1 {
   font-size: var(--fs-500);
   font-weight: 700;
   color: var(--clr-neutral-500);
+  line-height: 1.273;
 }
 
 p {

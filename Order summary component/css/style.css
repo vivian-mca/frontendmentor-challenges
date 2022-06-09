@@ -246,7 +246,7 @@ h1 {
   }
 
   .grid-gap {
-    column-gap: var(--6px);
+    column-gap: var(--8px);
   }
 
   .link {

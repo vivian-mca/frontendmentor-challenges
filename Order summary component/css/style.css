@@ -31,7 +31,7 @@
   --48px: calc(48rem / 16);
   --56px: calc(56rem / 16);
   --64px: calc(64rem / 16);
-  --97px: calc(97rem / 16);
+  --102px: calc(102rem / 16);
   --327px: calc(327rem / 16);
   --450px: calc(450rem / 16);
 }
@@ -215,7 +215,7 @@ h1 {
   }
 
   .button {
-    padding: var(--15px) var(--97px);
+    padding: var(--15px) var(--102px);
   }
 
   .card {

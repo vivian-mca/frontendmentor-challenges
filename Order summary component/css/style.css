@@ -28,6 +28,7 @@
   --25px: calc(25rem / 16);
   --28px: calc(28rem / 16);
   --32px: calc(32rem / 16);
+  --45px: calc(45rem / 16);
   --48px: calc(48rem / 16);
   --56px: calc(56rem / 16);
   --64px: calc(64rem / 16);
@@ -223,11 +224,12 @@ h1 {
   }
 
   .card__content {
-    padding: var(--48px);
+    padding: var(--45px) var(--48px) var(--48px);
   }
 
   .card__subheader {
     --space: var(--17px);
+    line-height: 1.625;
   }
 
   .card__pricing {

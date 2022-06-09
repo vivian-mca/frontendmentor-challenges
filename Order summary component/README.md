@@ -67,7 +67,7 @@ Users should be able to:
 - CSS custom properties
 - CSS logical properties
 - CSS flexbox
-- CSS frid
+- CSS grid
 - Mobile-first workflow
 
 ### What I learned

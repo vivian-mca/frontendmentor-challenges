@@ -73,11 +73,11 @@ This was a great beginner practice for basic HTML and CSS. I implemented CSS CUB
 
 ```css
 .flow > * + * {
-  margin-block-start: var(--space, 1.6rem);
+  margin-block-start: var(--space, var(--16px));
 }
 
 .flow-exception {
-  --space: 2.4rem;
+  --space: var(--24px);
 }
 ```
 

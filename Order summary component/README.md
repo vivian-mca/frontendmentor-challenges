@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="" alt="desktop design" align="center"/>
+  <img src="./design/desktop-design.png" alt="desktop design" align="center"/>
 </p>
 
 <h1 align="center">Order summary component</h1>
@@ -10,7 +10,7 @@
       Live
     </a>
     <span> | </span>
-    <a href="">
+    <a href="https://www.frontendmentor.io/solutions/order-summary-component-using-cube-css-methodology-Ql0wpFysid">
       Solution
     </a>
    <span> | </span>
@@ -47,6 +47,16 @@ Your users should be able to:
 1. See hover states for interactive elements
 
 ### Screenshot
+
+<p align="center">
+  <img src="./design/solution-v-design.png" alt="mobile design"/>
+</p>
+
+<p align="center"><em>Mobile design</em></p>
+
+<p align="center">
+  <img src="./design/mobile-design.png" alt="mobile design" width="300"/>
+</p>
 
 ## My process
 

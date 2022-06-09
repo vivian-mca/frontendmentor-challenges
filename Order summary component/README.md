@@ -42,7 +42,7 @@
 
 A perfect project for newbies who are starting to build confidence with layouts!
 
-Your users should be able to:
+Users should be able to:
 
 1. See hover states for interactive elements
 

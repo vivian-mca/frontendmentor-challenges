@@ -1,179 +1,253 @@
 /*------------------------------------*\
-  GLOBAL-STYLES
+  #GLOBAL-STYLES
 \*------------------------------------*/
-
 :root {
   --color-neutral-100: hsl(0, 0%, 100%);
   --color-neutral-200: hsl(225, 100%, 98%);
   --color-neutral-400: hsl(224, 23%, 55%);
-  --color-neutral-800: hsl(223, 46%, 23%);
-  --color-neutral-900: hsl(223, 47%, 23%);
+  --color-neutral-800: hsl(223, 47%, 23%);
 
-  --color-primary-200: hsl(225, 100%, 92%);
+  --color-primary-200: hsl(225, 100%, 94%);
   --color-primary-300: hsl(245, 83%, 68%);
   --color-primary-400: hsl(245, 75%, 52%);
 
-  --fs-700: 2.8rem;
-  --fs-400: 1.6rem;
-  --fs-300: 1.5rem;
-  --fs-200: 1.4rem;
+  --ff: "Red Hat Display", sans-serif;
+
+  --3px: calc(3rem / 16);
+  --6px: calc(6rem / 16);
+  --8px: calc(8rem / 16);
+  --11px: calc(11rem / 16);
+  --13px: calc(13rem / 16);
+  --14px: calc(14rem / 16);
+  --15px: calc(15rem / 16);
+  --16px: 1rem;
+  --17px: calc(17rem / 16);
+  --20px: calc(20rem / 16);
+  --22px: calc(22rem / 16);
+  --24px: calc(24rem / 16);
+  --25px: calc(25rem / 16);
+  --28px: calc(28rem / 16);
+  --32px: calc(32rem / 16);
+  --48px: calc(48rem / 16);
+  --56px: calc(56rem / 16);
+  --64px: calc(64rem / 16);
+  --97px: calc(97rem / 16);
+  --327px: calc(327rem / 16);
+  --450px: calc(450rem / 16);
 }
 
 body {
-  background: var(--color-primary-200);
-  font-family: "Red Hat Display", sans-serif;
-  font-size: var(--fs-400);
-  font-weight: 500;
-  color: var(--color-neutral-400);
-  line-height: 1.625;
-
-  /* for demo only */
   display: grid;
-  min-height: 100vh;
   place-items: center;
+  padding-inline: var(--8px);
+  background: var(--color-primary-200)
+    url(../images/pattern-background-mobile.svg) center top no-repeat fixed;
+  font-family: var(--ff);
+  font-size: var(--15px);
+  font-weight: 500;
+  line-height: 1.323;
 }
 
-h1,
-h2,
-h3 {
-  line-height: 1.1;
-}
-
-h2 {
-  font-size: var(--fs-700);
+h1 {
+  font-size: var(--22px);
   font-weight: 900;
-  color: var(--color-neutral-800);
 }
 
 /*------------------------------------*\
-  COMPOSITION
+  #COMPOSITION
 \*------------------------------------*/
-
-.grid-flow {
-  display: grid;
-  gap: var(--gap, 1.6rem);
+.flow > * + * {
+  margin-block-start: var(--space, var(--24px));
 }
 
-.flex-row {
+.flow-exception-16px {
+  --space: var(--16px);
+}
+
+.flex {
   display: flex;
-  gap: var(--gap, 1.6rem);
+  align-items: center;
+}
+
+.grid-gap {
+  display: grid;
+  row-gap: var(--3px);
 }
 
 /*------------------------------------*\
-  UTILITY
+  #UTILITY
 \*------------------------------------*/
-
-.padding-24 {
-  padding: 2.4rem;
+.padding-16px {
+  padding: var(--16px);
 }
 
-.padding-48 {
-  padding: 4.8rem;
+.padding-32px {
+  padding: var(--32px);
 }
 
-.text-neutral-800 {
-  color: var(--color-neutral-800);
+.align-right {
+  margin-inline-start: auto;
 }
 
-.text-neutral-400 {
-  color: var(--color-neutral-400);
+.margin-left-20px {
+  margin-inline-start: var(--20px);
 }
 
 .bg-neutral-100 {
-  background-color: var(--color-neutral-100);
+  background: var(--color-neutral-100);
 }
 
 .bg-neutral-200 {
-  background-color: var(--color-neutral-200);
+  background: var(--color-neutral-200);
 }
 
-.text-align-left {
-  text-align: start;
+.br-11px {
+  border-radius: var(--11px);
+}
+
+.br-20px {
+  border-radius: var(--20px);
+}
+
+.fs-14px {
+  font-size: var(--14px);
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.color-neutral-400 {
+  color: var(--color-neutral-400);
+}
+
+.color-neutral-800 {
+  color: var(--color-neutral-800);
 }
 
 .text-align-center {
   text-align: center;
 }
 
-.text-align-right {
-  text-align: end;
-}
-
-.fw-bold {
-  font-weight: 700;
-}
-
-.fw-extra-bold {
-  font-weight: 900;
-}
-
-.br-1 {
-  border-radius: 1.1rem;
-}
-
-.br-2 {
-  border-radius: 2rem;
-}
-
-.push-right {
-  margin-left: auto;
-}
-
-a,
-.link {
-  background: transparent;
-  border: 0;
-  font-weight: 700;
-  color: var(--color-primary-400);
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-a:hover,
-a:focus,
-.link:hover,
-.link:focus {
-  color: var(--color-primary-300);
-  text-decoration: none;
+.line-height-25px {
+  line-height: calc(25 / 15);
 }
 
 /*------------------------------------*\
-  BLOCK
+  #BLOCK
 \*------------------------------------*/
+.card {
+  max-width: var(--327px);
+  box-shadow: 0 40px 40px -20px rgba(13, 48, 189, 0.1518);
+  overflow: hidden;
+}
 
 .button {
-  padding: 1.5rem 10.2rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: var(--15px) var(--56px);
   background: transparent;
-  font-size: var(--fs-300);
-  font-weight: 700;
-  border: 0;
-  border-radius: 1.1rem;
+  border: none;
+  border-radius: var(--11px);
+  font-size: var(--15px);
+  font-weight: 900;
   text-decoration: none;
   cursor: pointer;
 }
 
+.link {
+  font-size: var(--13px);
+  font-weight: 700;
+  color: var(--color-primary-400);
+  cursor: pointer;
+}
+
+.link:focus,
+.link:hover {
+  color: var(--color-primary-300);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/*------------------------------------*\
+  #EXCEPTION
+\*------------------------------------*/
 .button[data-type="primary"] {
-  color: var(--color-neutral-100);
+  box-shadow: 0 20px 20px rgba(56, 42, 225, 0.1903);
   background: var(--color-primary-400);
+  color: var(--color-neutral-100);
 }
 
-.button[data-type="primary"]:hover,
-.button[data-type="primary"]:focus {
+.button[data-type="primary"]:focus,
+.button[data-type="primary"]:hover {
   background: var(--color-primary-300);
+  transition: background 0.3s ease;
 }
 
-.button[data-type="naked"] {
+.button[data-type="transparent"] {
   padding: 0;
   color: var(--color-neutral-400);
+  transition: color 0.3s ease;
 }
 
-.button[data-type="naked"]:hover,
-.button[data-type="naked"]:focus {
-  color: var(--color-neutral-900);
+.button[data-type="transparent"]:focus,
+.button[data-type="transparent"]:hover {
+  color: var(--color-neutral-800);
 }
 
-.card {
-  overflow: hidden;
-  /* for demo only */
-  max-width: 450px;
+/*------------------------------------*\
+  #MEDIA-QUERY
+\*------------------------------------*/
+@media (min-width: 376px) {
+  body {
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-size: contain;
+  }
+}
+
+@media (min-width: 480px) {
+  body {
+    font-size: var(--16px);
+  }
+
+  h1 {
+    font-size: var(--28px);
+  }
+
+  .button {
+    padding: var(--15px) var(--97px);
+  }
+
+  .card {
+    max-width: var(--450px);
+  }
+
+  .card__content {
+    padding: var(--48px);
+  }
+
+  .card__subheader {
+    --space: var(--17px);
+  }
+
+  .card__pricing {
+    --space: var(--20px);
+    padding: var(--25px) var(--24px);
+  }
+
+  .card__pricing-details {
+    font-size: var(--16px);
+  }
+
+  .flow {
+    --space: var(--32px);
+  }
+
+  .grid-gap {
+    column-gap: var(--6px);
+  }
+
+  .link {
+    font-size: var(--14px);
+  }
 }

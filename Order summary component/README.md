@@ -96,4 +96,4 @@ Overall, I would like to improve on building apps from design files faster. I al
 
 ## Acknowledgments
 
-- (A look at the CUBE CSS methodology in action by Kevin Powell)[https://www.youtube.com/watch?v=NanhQvnvbR8]
+- [A look at the CUBE CSS methodology in action by Kevin Powell](https://www.youtube.com/watch?v=NanhQvnvbR8)

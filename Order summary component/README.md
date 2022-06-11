@@ -42,7 +42,7 @@
 
 A perfect project for newbies who are starting to build confidence with layouts!
 
-Your users should be able to:
+Users should be able to:
 
 1. See hover states for interactive elements
 
@@ -67,7 +67,7 @@ Your users should be able to:
 - CSS custom properties
 - CSS logical properties
 - CSS flexbox
-- CSS frid
+- CSS grid
 - Mobile-first workflow
 
 ### What I learned
@@ -96,4 +96,4 @@ Overall, I would like to improve on building apps from design files faster. I al
 
 ## Acknowledgments
 
-- (A look at the CUBE CSS methodology in action by Kevin Powell)[https://www.youtube.com/watch?v=NanhQvnvbR8]
+- [A look at the CUBE CSS methodology in action by Kevin Powell](https://www.youtube.com/watch?v=NanhQvnvbR8)
